@@ -8,7 +8,7 @@ function Login() {
   async function fazerLogin(e) {
     e.preventDefault();
 
-    const resposta = await fetch("http://localhost:3000/login", {
+    const resposta = await fetch("/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
